@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Entidades">
+  <ClassDiagramComponents>
+    <Class name="Electrodomestico" package="Entidades" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="precio" type="Double" visibility="protected"/>
+        <Field name="color" type="String" visibility="protected"/>
+        <Field name="consumoenergetico" type="String" visibility="protected"/>
+        <Field name="peso" type="Integer" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="String" name="color"/>
+          <Argument type="String" name="consumoenergetico"/>
+          <Argument type="Integer" name="peso"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPrecio" returnType="Double" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="Double" name="precio"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="getConsumoenergetico" returnType="String" visibility="public"/>
+        <Method name="setConsumoenergetico" returnType="void" visibility="public">
+          <Argument type="String" name="consumoenergetico"/>
+        </Method>
+        <Method name="getPeso" returnType="Integer" visibility="public"/>
+        <Method name="setPeso" returnType="void" visibility="public">
+          <Argument type="Integer" name="peso"/>
+        </Method>
+        <Method name="ComprobarConsumoEnergetico" returnType="void" visibility="public">
+          <Argument type="char" name="letra"/>
+        </Method>
+        <Method name="ComprobarColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="CrearElectrodomestico" returnType="void" visibility="public"/>
+        <Method name="PrecioFinal" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Lavadora" package="Entidades" visibility="public" xPosition="20.0" yPosition="497.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Televisor" package="Entidades" visibility="public" xPosition="371.0" yPosition="497.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Entidades.Lavadora" target="Entidades.Electrodomestico"/>
+    <IsRelation name="is" source="Entidades.Televisor" target="Entidades.Electrodomestico"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

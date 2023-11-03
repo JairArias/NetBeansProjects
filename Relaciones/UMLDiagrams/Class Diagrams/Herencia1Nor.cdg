@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Entidades">
+  <ClassDiagramComponents>
+    <Class name="Animal" package="Entidades" visibility="public" xPosition="181.0" yPosition="65.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Caballo" package="Entidades" visibility="public" xPosition="10.0" yPosition="208.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Gato" package="Entidades" visibility="public" xPosition="354.0" yPosition="208.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Perro" package="Entidades" visibility="public" xPosition="181.0" yPosition="208.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Entidades.Perro" target="Entidades.Animal"/>
+    <IsRelation name="is" source="Entidades.Gato" target="Entidades.Animal"/>
+    <IsRelation name="is" source="Entidades.Caballo" target="Entidades.Animal"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

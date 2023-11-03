@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Entidades">
+  <ClassDiagramComponents>
+    <Class name="Perro" package="Entidades" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="package"/>
+        <Field name="raza" type="String" visibility="package"/>
+        <Field name="edad" type="Integer" visibility="package"/>
+        <Field name="tamano" type="double" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Persona" package="Entidades" visibility="public" xPosition="249.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="package"/>
+        <Field name="apellido" type="String" visibility="package"/>
+        <Field name="edad" type="Integer" visibility="package"/>
+        <Field name="documento" type="Integer" visibility="package"/>
+        <Field name="mascota" type="List&lt;Perro&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="mascota" source="Entidades.Persona" target="Entidades.Perro" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Perro&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
